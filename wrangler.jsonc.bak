@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ai-image-studio",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+
+  "observability": { "enabled": true },
+
+  "ai": { "binding": "AI" },
+
+  "kv_namespaces": [
+    { "binding": "CACHE", "id": "REPLACE_WITH_YOUR_KV_ID" }
+  ],
+
+  "durable_objects": {
+    "bindings": [{ "name": "QUOTA", "class_name": "Quota" }]
+  },
+  "exports": {
+    "Quota": { "type": "durable-object", "storage": "sqlite" }
+  }
+}

@@ -9,7 +9,7 @@
   "ai": { "binding": "AI" },
 
   "kv_namespaces": [
-    { "binding": "CACHE", "id": "REPLACE_WITH_YOUR_KV_ID" }
+    { "binding": "CACHE", "id": "cf4b3307b967415ab2f40815f5394c19" }
   ],
 
   "durable_objects": {
